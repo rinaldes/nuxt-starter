@@ -1,0 +1,27 @@
+# Define colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+MAGENTA='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
+echo " "
+echo -e "${CYAN} 👀 *peeks at your merged changes* W-what's this? New dependencies? I better check...${NC}"
+
+changed_files="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
+
+check_run() {
+  echo "$changed_files" | grep --quiet "$1" && eval "$2"
+}
+
+# Install npm packages if package.json changed
+check_run package.json "echo ' ' && echo -e '${YELLOW} 📦 *notices package changes* Y-you changed the dependencies! I... I better update them for you...${NC}' && pnpm install"
+
+# Run migrations if any prisma files changed
+check_run /prisma/ "echo ' ' && echo -e '${MAGENTA} 🔄 *concentrating* Database changes detected! I-I'll handle the migration... *rolls up sleeves*${NC}' && pnpm prisma migrate deploy"
+
+echo " "
+echo -e "${GREEN} ✨ *adjusts glasses* Everything's updated now! N-not that I was worried about your project or anything...${NC}"
+echo " "

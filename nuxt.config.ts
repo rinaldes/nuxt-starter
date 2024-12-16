@@ -14,6 +14,14 @@ export default defineNuxtConfig({
     layouts: 'app/layouts',
   },
 
+  components: {
+    dirs: ['feature', 'shared/components'],
+  },
+
+  imports: {
+    dirs: ['shared/composables', 'shared/stores', 'shared/utils'],
+  },
+
   modules: [
     '@nuxt/ui',
     '@nuxt/image',

@@ -13,5 +13,11 @@ export default defineNuxtConfig({
     layouts: "app/layouts",
   },
 
-  modules: ["@nuxt/ui", "@nuxt/image", "@nuxt/eslint"],
+  modules: [
+    "@nuxt/ui",
+    "@nuxt/image",
+    "@nuxt/eslint",
+    "@pinia/nuxt",
+    "@vueuse/nuxt",
+  ],
 });

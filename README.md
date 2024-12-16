@@ -1,75 +1,45 @@
-# Nuxt UI Minimal Starter
+# Nuxt Starter
+A modern Nuxt.js starter template with essential tooling and configurations pre-setup.
 
-Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
+## Features
+- 🚀 [Nuxt 3](https://nuxt.com/) with TypeScript
+- 🎨 [Nuxt UI](https://ui.nuxt.com/) for styled components
+- 📦 [Pinia](https://pinia.vuejs.org/) for state management
+- 🖼️ [Nuxt Image](https://image.nuxt.com/) for optimized images
+- 🔍 [VueUse](https://vueuse.org/) composition utilities
+- 🐞 [Sentry](https://sentry.io/) for error tracking
 
-## Setup
+## Development Tools
+- ✨ Code formatting with [Prettier](https://prettier.io/)
+- 🧪 Testing with [Vitest](https://vitest.dev/)
+- 📝 Linting with [ESLint](https://eslint.org/)
+- 🪝 Git hooks with [Husky](https://typicode.github.io/husky/)
 
-Make sure to install the dependencies:
+## Getting Started
 
 ```bash
-# npm
-npm install
-
-# pnpm
+# Install dependencies
 pnpm install
 
-# yarn
-yarn install
+# Start development server
+pnpm dev
 
-# bun
-bun install
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
 ```
 
-## Development Server
+## Scripts
+- pnpm dev - Start development server
+- pnpm build - Build for production
+- pnpm preview - Preview production build
+- pnpm lint - Run ESLint and Prettier checks
+- pnpm lint:fix - Fix linting issues
+- pnpm test - Run tests
+- pnpm test:ui - Run tests with UI
+- pnpm test:coverage - Run tests with coverage report
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Package Manager
+This project uses pnpm as the package manager. But feel free to use npm or yarn if you prefer.

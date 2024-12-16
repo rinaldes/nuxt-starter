@@ -23,3 +23,8 @@ logs
 .env.*
 !.env.example
 .aider*
+
+# Sentry Config File
+.env.sentry-build-plugin
+sentry.client.config.ts
+sentry.server.config.ts

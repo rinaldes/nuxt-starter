@@ -8,7 +8,6 @@ export default withNuxt([
       prettier: prettierPlugin,
     },
     rules: {
-      '@typescript-eslint/explicit-function-return-type': 'warn',
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/no-unused-vars': [
         'warn',
@@ -21,6 +20,7 @@ export default withNuxt([
       'vue/component-api-style': ['error', ['script-setup']],
       'vue/component-name-in-template-casing': ['error', 'PascalCase'],
       'vue/multi-word-component-names': 'off',
+      'vue/html-self-closing': 'off',
       'import/no-restricted-paths': [
         'error',
         {

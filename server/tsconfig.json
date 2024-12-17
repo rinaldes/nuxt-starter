@@ -1,3 +1,12 @@
 {
-  "extends": "../.nuxt/tsconfig.server.json"
+  "extends": "../.nuxt/tsconfig.server.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/api/*": ["api/*"],
+      "@/lib/*": ["lib/*"],
+      "@/middleware/*": ["middleware/*"],
+      "@/routes/*": ["routes/*"]
+    }
+  }
 }

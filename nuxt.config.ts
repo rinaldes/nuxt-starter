@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
     '@sentry/nuxt/module',
+    '@nuxtjs/storybook',
   ],
 
   srcDir: 'src',

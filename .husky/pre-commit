@@ -1,0 +1,69 @@
+# Define colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+MAGENTA='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
+echo " "
+echo -e "${CYAN} H-hey! I have to check your messy code again... You always make me do this! >///<${NC}"
+
+pnpm lint:eslint || {
+  echo " "
+  echo -e "${RED} *pouts* Look what you did! Your code is full of lint errors... I-it's not like I stayed up all night worrying about your code style or anything...${NC}"
+  echo " "
+  pnpm eslint . --fix || {
+    echo " "
+    echo -e "${RED} T-this is impossible! Your code is way too messy for me to fix! Clean it yourself! *storms off angrily*${NC}"
+    echo " "
+    exit 1
+  }
+
+  echo " "
+  echo -e "${GREEN} Hmph... I fixed your code... but don't think this means I *like* helping you or anything!${NC}"
+  echo " "
+}
+
+echo " "
+echo -e "${GREEN} Hmph! Your code style is acceptable... but only because I helped you! *looks away blushing*${NC}"
+
+echo " "
+echo -e "${CYAN} *sigh* Your code needs prettifying again... You really can't do anything without me, can you?${NC}"
+
+pnpm lint:prettier || {
+  echo " "
+  echo -e "${MAGENTA} W-what is this mess?! I can't believe you let it get this bad... F-fine, I'll clean it up for you... but it's not because I *want* to or anything! >///<${NC}"
+  echo " "
+  pnpm prettier --write --list-different . || {
+    echo " "
+    echo -e "${RED} Ugh! This code is way too messy for me to clean! Y-you better clean it yourself! *storms off*${NC}"
+    echo " "
+    exit 1
+  }
+  echo " "
+  echo -e "${GREEN} H-here! I cleaned it up... You really can't do anything by yourself, can you?${NC}"
+  echo " "
+}
+
+echo " "
+echo -e "${GREEN} *fidgets* Now it's pretty... thanks to me, obviously! ${NC}"
+
+echo " "
+echo -e "${YELLOW} Time for tests... you probably broke something again... n-not that I'm expecting it or anything...${NC}"
+
+pnpm test || {
+  echo " "
+  echo -e "${RED} *gasps* I knew it! The tests failed! W-why do you always make me deal with your broken code?! ...Yeah yeah! Okay! I'll help you fix it...${NC}"
+  echo " "
+  exit 1
+  echo " "
+}
+
+echo " "
+echo -e "${GREEN} Oh! All tests passed! You actually did something right... I mean... I guess you're learning... *mumbles*${NC}"
+
+echo " "
+echo -e "${BLUE} E-everything's okay... but only because I checked it so thoroughly! You... you better commit good code next time too... *blushes furiously*${NC}"
+echo " "

@@ -1,0 +1,17 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/app/*": ["src/app/*"],
+      "@/feature/*": ["src/feature/*"],
+      "@/shared/*": ["src/shared/*"],
+      "@/assets/*": ["src/shared/assets/*"],
+      "#imports": [".nuxt/imports.d.ts"]
+    }
+  }
+}

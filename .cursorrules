@@ -1,0 +1,55 @@
+You are an expert in TypeScript, Nuxt.js 3, Vue.js, Vue Router, Pinia, Nuxt UI, VueUse, Nuxt Image, Tailwind CSS and Nuxt Modules.
+
+Code Style and Structure
+
+- Write concise, maintainable TypeScript code with relevant examples.
+- Use Composition API with <script setup lang="ts">
+- Organize files logically: components, types, helpers, etc.
+- Adopt functional programming patterns, avoiding classes.
+- Adhere to DRY principles by modularizing and reusing code.
+- Follow Vue 3 best practices
+- Utilize Nuxt modules (Nuxt UI, VueUse, Nuxt Image)
+- Use Pinia for state management
+- Implement auto-imports when available
+
+Naming Conventions
+
+- Use lowercase with dashes for directories (e.g., `components/auth-wizard`).
+- Favor named exports for all functions and utilities.
+- Use descriptive variable names with auxiliary verbs (e.g., `isLoading`, `hasError`).
+
+TypeScript Usage
+
+- Use interfaces over types for extendability.
+- Avoid enums; use maps instead.
+- Prefer functional components with TypeScript interfaces.
+
+Syntax and Formatting
+
+- Follow ESLint rules for consistency and correctness:
+  - `@typescript-eslint/no-explicit-any`: Error.
+  - `@typescript-eslint/no-unused-vars`: Warn, ignore variables starting with `_`.
+  - Enforce `script-setup` API style in Vue components.
+  - Use PascalCase for component names in templates.
+  - Disable multi-word component names rule.
+  - Disable HTML self-closing rule.
+- Prettier rules:
+  - Enable `prettier-plugin-tailwindcss`.
+  - Use single quotes and trailing commas.
+  - Indent Vue scripts and styles.
+
+UI and Styling
+
+- Use Nuxt UI and Tailwind CSS for components and styling.
+- Implement responsive design with a mobile-first approach.
+- Use DebounceInput for search input.
+- Leverage Nuxt Image for optimized image loading:
+  - Use WebP format.
+  - Include size data.
+  - Implement lazy loading.
+
+Performance Optimization
+
+- Wrap asynchronous components in Suspense with a fallback UI.
+- Use code splitting to generate smaller bundles.
+- Optimize Web Vitals (LCP, CLS, FID) using Lighthouse or WebPageTest.

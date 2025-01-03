@@ -1,0 +1,28 @@
+# Define colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+MAGENTA='\033[0;35m'
+CYAN='\033[0;36m'
+NC='\033[0m' # No Color
+
+echo " "
+echo -e "${CYAN}*peeks at your commit message* W-what are you trying to write here? I better check it...${NC}"
+
+npx --no -- commitlint --edit ${1} || {
+  echo " "
+  echo -e "${RED}B-baka! That's not how you write a commit message! *pouts*${NC}"
+  echo -e "${YELLOW}It should be like this:${NC}"
+  echo -e "${BLUE}✨ feat: add new feature${NC}"
+  echo -e "${BLUE}🐛 fix: resolve issue${NC}"
+  echo -e "${BLUE}📝 docs: update readme${NC}"
+  echo -e " "
+  echo -e "${RED}Got it? It's not like I'm helping you because I want to or anything...${NC}"
+  echo " "
+  exit 1
+}
+
+echo " "
+echo -e "${GREEN}Hmph! Your commit message is... k-kawaii~ *blushes* I mean, it's acceptable!${NC}"
+echo " " 

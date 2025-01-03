@@ -14,15 +14,23 @@ npx --no -- commitlint --edit ${1} || {
   echo " "
   echo -e "${RED}B-baka! That's not how you write a commit message! *pouts*${NC}"
   echo -e "${YELLOW}It should be like this:${NC}"
-  echo -e "${BLUE}✨ feat: add new feature${NC}"
-  echo -e "${BLUE}🐛 fix: resolve issue${NC}"
-  echo -e "${BLUE}📝 docs: update readme${NC}"
+  echo -e "${BLUE}feat: ✨ add new feature${NC}"
+  echo -e "${BLUE}fix: 🐛 resolve issue${NC}"
+  echo -e "${BLUE}docs: 📝 update readme${NC}"
   echo -e " "
   echo -e "${RED}Got it? It's not like I'm helping you because I want to or anything...${NC}"
   echo " "
   exit 1
 }
 
+# Get the commit message
+commit_msg=$(cat "$1")
+
 echo " "
-echo -e "${GREEN}Hmph! Your commit message is... k-kawaii~ *blushes* I mean, it's acceptable!${NC}"
+# Check if commit message contains emoji or gitmoji shortcode
+if echo "$commit_msg" | grep -qE "^(:[a-zA-Z0-9_+-]+:|[\p{Emoji_Presentation}\p{Extended_Pictographic}])" 2>/dev/null; then
+  echo -e "${GREEN}Uwaa~ Your commit message is so kawaii with that emoji! *sparkly eyes* ...I mean, it's acceptable!${NC}"
+else
+  echo -e "${GREEN}Hmph! Your commit message is... acceptable. Though it could use some emoji... *pouts*${NC}"
+fi
 echo " " 

@@ -5,7 +5,14 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
 
-  modules: ['@nuxt/ui', '@nuxt/eslint', '@nuxt/test-utils/module'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/image',
+    '@nuxt/test-utils/module',
+    '@nuxt/ui',
+    '@pinia/nuxt',
+    '@vueuse/nuxt',
+  ],
 
   srcDir: 'src',
   dir: {

@@ -13,7 +13,7 @@ importers:
         version: 1.8.1(db0@0.2.1)(ioredis@5.4.2)(magicast@0.3.5)(rollup@4.29.1)
       '@nuxt/ui':
         specifier: 3.0.0-alpha.9
-        version: 3.0.0-alpha.9(@babel/core@7.26.0)(@babel/parser@7.26.3)(change-case@5.4.4)(db0@0.2.1)(embla-carousel@8.5.1)(ioredis@5.4.2)(magicast@0.3.5)(postcss@8.4.49)(pug@3.0.3)(rollup@4.29.1)(svelte@5.16.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0))(vue@3.5.13(typescript@5.7.2))
+        version: 3.0.0-alpha.9(@babel/core@7.26.0)(@babel/parser@7.26.3)(change-case@5.4.4)(db0@0.2.1)(embla-carousel@8.5.1)(ioredis@5.4.2)(magicast@0.3.5)(postcss@8.4.49)(pug@3.0.3)(rollup@4.29.1)(svelte@5.16.1)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0))(vue@3.5.13(typescript@5.7.2))
       '@pinia/nuxt':
         specifier: 0.9.0
         version: 0.9.0(magicast@0.3.5)(pinia@2.3.0(typescript@5.7.2)(vue@3.5.13(typescript@5.7.2)))(rollup@4.29.1)
@@ -56,7 +56,7 @@ importers:
         version: 8.3.3(@types/node@22.10.5)(eslint@9.17.0(jiti@2.4.2))(lightningcss@1.28.2)(magicast@0.3.5)(nuxt@3.15.0(@parcel/watcher@2.5.0)(@types/node@22.10.5)(db0@0.2.1)(eslint@9.17.0(jiti@2.4.2))(ioredis@5.4.2)(lightningcss@1.28.2)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.29.1)(terser@5.37.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0))(yaml@2.7.0))(optionator@0.9.4)(rollup@4.29.1)(storybook@8.4.7(prettier@3.4.2))(terser@5.37.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0))(vue@3.5.13(typescript@5.7.2))(yaml@2.7.0)
       '@storybook/addon-essentials':
         specifier: ^8.4.7
-        version: 8.4.7(@types/react@18.3.18)(storybook@8.4.7(prettier@3.4.2))
+        version: 8.4.7(@types/react@19.0.2)(storybook@8.4.7(prettier@3.4.2))
       '@storybook/addon-interactions':
         specifier: ^8.4.7
         version: 8.4.7(storybook@8.4.7(prettier@3.4.2))
@@ -2004,11 +2004,8 @@ packages:
   '@types/pg@8.6.1':
     resolution: {integrity: sha512-1Kc4oAGzAl7uqUStZCDvaLFqZrW9qWSjXOmBfdgyBP5La7Us6Mg4GBvRlSoaZMhQF/zSj1C8CtKMBkoiT8eL8w==}
 
-  '@types/prop-types@15.7.14':
-    resolution: {integrity: sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ==}
-
-  '@types/react@18.3.18':
-    resolution: {integrity: sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==}
+  '@types/react@19.0.2':
+    resolution: {integrity: sha512-USU8ZI/xyKJwFTpjSVIrSeHBVAGagkHQKPNbxeWwql/vDmnTIBgx+TJnhFnj1NXgz8XfprU0egV2dROLGpsBEg==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -5444,8 +5441,8 @@ packages:
       typescript:
         optional: true
 
-  svelte@5.16.0:
-    resolution: {integrity: sha512-Ygqsiac6UogVED2ruKclU+pOeMThxWtp9LG+li7BXeDKC2paVIsRTMkNmcON4Zejerd1s5sZHWx6ZtU85xklVg==}
+  svelte@5.16.1:
+    resolution: {integrity: sha512-FsA1OjAKMAFSDob6j/Tv2ZV9rY4SeqPd1WXQlQkFkePAozSHLp6tbkU9qa1xJ+uTRzMSM2Vx3USdsYZBXd3H3g==}
     engines: {node: '>=18'}
 
   svg-tags@1.0.0:
@@ -6905,10 +6902,10 @@ snapshots:
       - encoding
       - supports-color
 
-  '@mdx-js/react@3.1.0(@types/react@18.3.18)(react@18.3.1)':
+  '@mdx-js/react@3.1.0(@types/react@19.0.2)(react@18.3.1)':
     dependencies:
       '@types/mdx': 2.0.13
-      '@types/react': 18.3.18
+      '@types/react': 19.0.2
       react: 18.3.1
 
   '@netlify/functions@2.8.2':
@@ -7304,7 +7301,7 @@ snapshots:
       - terser
       - typescript
 
-  '@nuxt/ui@3.0.0-alpha.9(@babel/core@7.26.0)(@babel/parser@7.26.3)(change-case@5.4.4)(db0@0.2.1)(embla-carousel@8.5.1)(ioredis@5.4.2)(magicast@0.3.5)(postcss@8.4.49)(pug@3.0.3)(rollup@4.29.1)(svelte@5.16.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0))(vue@3.5.13(typescript@5.7.2))':
+  '@nuxt/ui@3.0.0-alpha.9(@babel/core@7.26.0)(@babel/parser@7.26.3)(change-case@5.4.4)(db0@0.2.1)(embla-carousel@8.5.1)(ioredis@5.4.2)(magicast@0.3.5)(postcss@8.4.49)(pug@3.0.3)(rollup@4.29.1)(svelte@5.16.1)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0))(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@iconify/vue': 4.2.0(vue@3.5.13(typescript@5.7.2))
       '@internationalized/number': 3.6.0
@@ -7315,7 +7312,7 @@ snapshots:
       '@nuxt/schema': 3.15.0(magicast@0.3.5)(rollup@4.29.1)
       '@nuxtjs/color-mode': 3.5.2(magicast@0.3.5)(rollup@4.29.1)
       '@tailwindcss/postcss': 4.0.0-alpha.34
-      '@tailwindcss/vite': 4.0.0-alpha.34(@babel/core@7.26.0)(postcss@8.4.49)(pug@3.0.3)(svelte@5.16.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0))
+      '@tailwindcss/vite': 4.0.0-alpha.34(@babel/core@7.26.0)(postcss@8.4.49)(pug@3.0.3)(svelte@5.16.1)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0))
       '@tanstack/vue-table': 8.20.5(vue@3.5.13(typescript@5.7.2))
       '@unhead/vue': 1.11.14(vue@3.5.13(typescript@5.7.2))
       '@vueuse/core': 11.3.0(vue@3.5.13(typescript@5.7.2))
@@ -8333,9 +8330,9 @@ snapshots:
       storybook: 8.4.7(prettier@3.4.2)
       ts-dedent: 2.2.0
 
-  '@storybook/addon-docs@8.4.7(@types/react@18.3.18)(storybook@8.4.7(prettier@3.4.2))':
+  '@storybook/addon-docs@8.4.7(@types/react@19.0.2)(storybook@8.4.7(prettier@3.4.2))':
     dependencies:
-      '@mdx-js/react': 3.1.0(@types/react@18.3.18)(react@18.3.1)
+      '@mdx-js/react': 3.1.0(@types/react@19.0.2)(react@18.3.1)
       '@storybook/blocks': 8.4.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.7(prettier@3.4.2))
       '@storybook/csf-plugin': 8.4.7(storybook@8.4.7(prettier@3.4.2))
       '@storybook/react-dom-shim': 8.4.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.4.7(prettier@3.4.2))
@@ -8346,12 +8343,12 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@storybook/addon-essentials@8.4.7(@types/react@18.3.18)(storybook@8.4.7(prettier@3.4.2))':
+  '@storybook/addon-essentials@8.4.7(@types/react@19.0.2)(storybook@8.4.7(prettier@3.4.2))':
     dependencies:
       '@storybook/addon-actions': 8.4.7(storybook@8.4.7(prettier@3.4.2))
       '@storybook/addon-backgrounds': 8.4.7(storybook@8.4.7(prettier@3.4.2))
       '@storybook/addon-controls': 8.4.7(storybook@8.4.7(prettier@3.4.2))
-      '@storybook/addon-docs': 8.4.7(@types/react@18.3.18)(storybook@8.4.7(prettier@3.4.2))
+      '@storybook/addon-docs': 8.4.7(@types/react@19.0.2)(storybook@8.4.7(prettier@3.4.2))
       '@storybook/addon-highlight': 8.4.7(storybook@8.4.7(prettier@3.4.2))
       '@storybook/addon-measure': 8.4.7(storybook@8.4.7(prettier@3.4.2))
       '@storybook/addon-outline': 8.4.7(storybook@8.4.7(prettier@3.4.2))
@@ -8613,12 +8610,12 @@ snapshots:
       postcss: 8.4.49
       tailwindcss: 4.0.0-alpha.34
 
-  '@tailwindcss/vite@4.0.0-alpha.34(@babel/core@7.26.0)(postcss@8.4.49)(pug@3.0.3)(svelte@5.16.0)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0))':
+  '@tailwindcss/vite@4.0.0-alpha.34(@babel/core@7.26.0)(postcss@8.4.49)(pug@3.0.3)(svelte@5.16.1)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0))':
     dependencies:
       '@tailwindcss/node': 4.0.0-alpha.34
       '@tailwindcss/oxide': 4.0.0-alpha.34
       lightningcss: 1.28.2
-      svelte-preprocess: 6.0.3(@babel/core@7.26.0)(postcss@8.4.49)(pug@3.0.3)(svelte@5.16.0)(typescript@5.7.2)
+      svelte-preprocess: 6.0.3(@babel/core@7.26.0)(postcss@8.4.49)(pug@3.0.3)(svelte@5.16.1)(typescript@5.7.2)
       tailwindcss: 4.0.0-alpha.34
       vite: 5.4.11(@types/node@22.10.5)(lightningcss@1.28.2)(terser@5.37.0)
     transitivePeerDependencies:
@@ -8719,11 +8716,8 @@ snapshots:
       pg-protocol: 1.7.0
       pg-types: 2.2.0
 
-  '@types/prop-types@15.7.14': {}
-
-  '@types/react@18.3.18':
+  '@types/react@19.0.2':
     dependencies:
-      '@types/prop-types': 15.7.14
       csstype: 3.1.3
 
   '@types/resolve@1.20.2': {}
@@ -12544,16 +12538,16 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-preprocess@6.0.3(@babel/core@7.26.0)(postcss@8.4.49)(pug@3.0.3)(svelte@5.16.0)(typescript@5.7.2):
+  svelte-preprocess@6.0.3(@babel/core@7.26.0)(postcss@8.4.49)(pug@3.0.3)(svelte@5.16.1)(typescript@5.7.2):
     dependencies:
-      svelte: 5.16.0
+      svelte: 5.16.1
     optionalDependencies:
       '@babel/core': 7.26.0
       postcss: 8.4.49
       pug: 3.0.3
       typescript: 5.7.2
 
-  svelte@5.16.0:
+  svelte@5.16.1:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@jridgewell/sourcemap-codec': 1.5.0

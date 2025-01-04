@@ -34,10 +34,14 @@ export default defineNuxtConfig({
     dirs: ['shared/composables', 'shared/stores', 'shared/utils'],
   },
 
+  storybook: {
+    enabled: false,
+  },
+
   sentry: {
     sourceMapsUploadOptions: {
-      org: 'handsome-boi-hr',
-      project: 'javascript-nuxt',
+      org: process.env['ORG'],
+      project: process.env['SENTRY_PROJECT'],
     },
 
     autoInjectServerSentry: 'top-level-import',

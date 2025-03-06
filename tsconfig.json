@@ -8,9 +8,7 @@
     "baseUrl": ".",
     "paths": {
       "@/app/*": ["src/app/*"],
-      "@/feature/*": ["src/feature/*"],
-      "@/shared/*": ["src/shared/*"],
-      "@/assets/*": ["src/shared/assets/*"],
+      "@/*": ["src/*"],
       "#imports": [".nuxt/imports.d.ts"]
     }
   }

@@ -7,7 +7,6 @@ A modern Nuxt.js starter template with essential tooling and configurations pre-
 - 📦 [Pinia](https://pinia.vuejs.org/) for state management
 - 🖼️ [Nuxt Image](https://image.nuxt.com/) for optimized images
 - 🔍 [VueUse](https://vueuse.org/) composition utilities
-- 🐞 [Sentry](https://sentry.io/) for error tracking
 
 ## Development Tools
 - ✨ Code formatting with [Prettier](https://prettier.io/)

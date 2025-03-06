@@ -13,8 +13,6 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@pinia/nuxt',
     '@vueuse/nuxt',
-    '@sentry/nuxt/module',
-    '@nuxtjs/storybook',
   ],
 
   srcDir: 'src',
@@ -32,22 +30,5 @@ export default defineNuxtConfig({
 
   imports: {
     dirs: ['shared/composables', 'shared/stores', 'shared/utils'],
-  },
-
-  storybook: {
-    enabled: false,
-  },
-
-  sentry: {
-    sourceMapsUploadOptions: {
-      org: process.env['ORG'],
-      project: process.env['SENTRY_PROJECT'],
-    },
-
-    autoInjectServerSentry: 'top-level-import',
-  },
-
-  sourcemap: {
-    client: 'hidden',
   },
 });

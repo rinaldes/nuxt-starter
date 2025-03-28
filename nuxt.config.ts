@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxt/test-utils/module',
     '@nuxt/ui',
     '@pinia/nuxt',
+    '@pinia/colada-nuxt',
     '@vueuse/nuxt',
   ],
 
@@ -25,7 +26,13 @@ export default defineNuxtConfig({
   css: ['~/shared/assets/css/main.css'],
 
   components: {
-    dirs: ['feature', 'shared/components'],
+    dirs: [
+      'feature',
+      'shared/components',
+      'shared/components/atoms',
+      'shared/components/molecules',
+      'shared/components/organisms',
+    ],
   },
 
   imports: {

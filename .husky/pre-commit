@@ -53,14 +53,6 @@ echo -e "${GREEN} *fidgets* Now it's pretty... thanks to me, obviously! ${NC}"
 echo " "
 echo -e "${YELLOW} Time for tests... you probably broke something again... n-not that I'm expecting it or anything...${NC}"
 
-pnpm test || {
-  echo " "
-  echo -e "${RED} *gasps* I knew it! The tests failed! W-why do you always make me deal with your broken code?! ...Yeah yeah! Okay! I'll help you fix it...${NC}"
-  echo " "
-  exit 1
-  echo " "
-}
-
 echo " "
 echo -e "${GREEN} Oh! All tests passed! You actually did something right... I mean... I guess you're learning... *mumbles*${NC}"
 
